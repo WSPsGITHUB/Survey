@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+    <!-- 請定義問券名稱 -->
+    <title>X小學每周運動時間調查</title>
+
+    <style type="text/css">
+        body {
+            background-image: url("img/校園風景圖.jpg");
+            background-size: cover;
+        }
+
+        .container {
+            color: yellow;
+            font-family: '微軟正黑體';
+            padding: 20px 60px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-bottom: 50px;
+        }
+
+        .btc {
+            color: red
+        }
+
+        .db {
+            width: 100px;
+            height: 150px;
+            border-color: yellow;
+            border-width: 2px;
+            border-style: solid;
+        }
+    </style>
+    <script>
+        function showMsg() {
+            alert('資料已經送出!!');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HTML5 新增了許多 <input> 的型態，請使用這些type，設計一份問卷 -->
+        <!-- http://www.w3schools.com/html/html_form_input_types.asp -->
+
+        <!-- 如果不知道該怎麼下手，請參考這個網站所設計的情境問卷找靈感 -->
+        <!-- https://technews.tw/2018/10/18/surveycake-situation-list/ -->
+
+        <!-- 底下是作業需要包含的項目 -->
+        <!-- 1. 問卷需包含 5-7 個問題 -->
+        <!-- 2. type 挑選時，請盡量不重複 -->
+        <h1>X小學每周運動時間調查</h1>
+        <from>
+            <div>
+                <label for="userName">姓名：</label>
+                <input type="text" name="userName" id="userName">
+            </div>
+            <br>
+
+            <div>
+                <label for="gender">性別：</label>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="excerciseTime" id="">
+                            男性
+                            <img class="db" src="img/op_01.jpg" alt="">
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="excerciseTime" id="">
+                            女性
+                            <img class="db" src="img/op_03.jpg" alt="">
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="excerciseTime" id="">
+                            性別不明
+                            <img class="db" src="img/op_06.jpg" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+
+            <div>
+                <label for="userPhone">電話：</label>
+                <input type="tel" name="userPhone" id="userPhone">
+            </div>
+            <br>
+
+            <div>
+                <!--name是表該群組內-->
+                <label for="">職業：</label>
+                <input type="radio" name="" id="teacher">
+                <label for="teacher">老師</label>
+
+                <input type="radio" name="" id="as">
+                <label for="as">行政人員</label>
+
+                <input type="radio" name="" id="student">
+                <label for="student">學生</label>
+
+                <input type="radio" name="" id="parent">
+                <label for="parent">家長</label>
+
+                <input type="radio" name="" id="coworkers">
+                <label for="coworkers">工友</label>
+            </div>
+            <br>
+
+            <div>
+                年齡:
+                <input type="radio" name="age" id="">
+                06-10
+                <input type="radio" name="age" id="">
+                11-20
+                <input type="radio" name="age" id="">
+                21-30
+                <input type="radio" name="age" id="">
+                31-40
+            </div>
+            <br>
+            <div>
+                運動時間：
+                <input type="checkbox" name="excerciseTime" id="">
+                0~30分鐘
+                <input type="checkbox" name="excerciseTime" id="">
+                31~60分鐘
+                <input type="checkbox" name="excerciseTime" id="">
+                61~90分鐘
+                <input type="checkbox" name="excerciseTime" id="">
+                91~120分鐘
+                <input type="checkbox" name="excerciseTime" id="">
+                121~150分鐘
+                <br>
+                <br>
+
+                <div><button class="btc" onclick="showMsg()">確 定</div>
+            </div>
+            <br>
+
+            <div>
+                <h3 style="color:red ">※以下是正式的，但本人目前做不出來※</h3>
+                <iframe style="margin: -15px 30px 20px " width="280" height="158"
+                    src="https://www.youtube.com/embed/ljaDs6YRO5Y" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </from>
+
+    </div>
+
+</body>
+
+</html>
